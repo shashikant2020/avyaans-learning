@@ -123,3 +123,13 @@ timeline
   - Copied user-attached medical, timeline, and education plan PDFs to the `input` directory.
 - **Key Decisions**:
   - Store incoming medical, educational, and behavioral PDFs in the `input` folder for easy access and reference.
+
+### Session 4: 2026-07-19
+- **Goal**: Connect workspace to GitHub repository.
+- **Actions Taken**:
+  - Added the remote origin pointing to `shashikant2020/avyaans-learning`.
+  - Authenticated using the user's personal access token (PAT).
+  - Pushed the repository successfully to the `main` branch.
+  - Reset the remote origin to exclude the plain-text token for security.
+- **Key Decisions**:
+  - Keep the remote origin url secure to protect credentials.
