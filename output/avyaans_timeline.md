@@ -90,24 +90,38 @@ This document is a high-fidelity record of Avyaan Prasad's historical behavior, 
 
 #### 👅 Sensory & Physical Profile
 - **Flight Anxiety**: The relocation flight to India in January 2023 caused extreme sensory panic. The airport noise, lights, and cabin pressure caused a major meltdown. He cried and screamed until he fell asleep on his mother's lap, staying there in fear for the entire 14-hour flight.
-- **Dietary Rigidity**: Upon arriving in Ranchi, India, he locked into a rigid eating pattern, refusing to eat anything for lunch except rice, dal, and one raw/lightly-cooked vegetable ("kachhi sabji").
+- **Dietary Rigidity**: Upon arriving in Ranchi, India, he locked into a rigid eating pattern and daily food routine.
+  - **Lunch**: He would only eat rice, dal, and **Kachhu ki sabji** (known as *arbi* or taro root in Hindi, which has a slimy/slippery potato-like texture). He ate this every single day for lunch.
+  - **Afternoon**: He ate **Nutrichoice digestive biscuits** accompanied by **milk**.
+  - **Evening**: He ate **boiled eggs**.
+  - **Dinner**: If his mood allowed, he ate **dal rice and potato curry** or the same **kachhu curry** at night.
+  - **Routine**: He insisted on sitting in one single place to eat and would not eat anywhere else.
+  - **Parent Dynamics**: When his mother (Sneha) was present, Avyaan adhered strictly to his rigid patterns. When alone with his father (Shashikant), he initially resisted but would ultimately break his patterns (eating elsewhere or trying different things). His father noted that Avyaan broke patterns when alone with him, possibly out of fear or because he assumed his father was not aware of his rigid eating templates.
 
 ---
 
-### 🔄 Years 5–6 (2023–2025): Intensive Therapy in Ranchi
+### 🔄 Years 5–6 (2023–2025): Intensive Therapy & Playschool in Ranchi
 *Lived in Ranchi (Jharkhand), India.*
 
 #### 💬 Social Interaction & Communication
-- **Play School in Ranchi**: Enrolled in a play school. His parents did not disclose his diagnosis to observe how teachers responded to his natural behaviors (stimming, scripting, solitary play).
-- **Therapy Progress in Hindi**: Attended intensive therapy at **ISIRC** and **Lalan's Academy**. Pushing therapies in Hindi (his mother tongue) was highly successful. Because he did not have to translate words, he understood therapists' instructions and cues much faster, leading to a jump in his receptive language.
+- **Play School in Ranchi**: Enrolled in a local playschool in the morning (attending until 12:00 PM) alongside typically developing ("normal") children.
+  - **Diagnosis Disclosure**: His parents did not disclose his autism diagnosis to the school, only stating he had behavioral issues due to relocating from Berlin, in order to observe how teachers and peers interacted with him naturally.
+  - **School Behavior**: Teachers observed that Avyaan did not interact much with others and would not eat his lunch on his own (he had to be fed or prompted by the staff).
+  - **Speech in School**: He did not speak or respond verbally during oral exams and assessments, which teachers highlighted as a concern.
+- **Therapy Progress in Hindi**: Attended an extremely busy schedule of therapies across two locations in Ranchi: **Lallan Academy of Autism** and another specialized center in the **Hinoo area**.
+  - He underwent **Occupational Therapy (OT)**, **Speech Therapy**, and **Sensory Therapy**.
+  - Pushing therapies in Hindi (his mother tongue) was highly successful. Because he did not have to translate words, he understood therapists' instructions and cues much faster, leading to a jump in his receptive language.
+  - *Comparison*: Although expensive, this intensive therapy and school setup in Ranchi was far better than the total lack of support and long waitlists in Berlin.
 
 #### 🧠 Cognitive & Learning Capabilities
 - **Visual Mapping**: Continued to excel at structured, geometric visual tasks.
+- **Academics in School**: Despite his verbal limitations in school, he was highly capable in academic tasks, successfully completing all writing work assigned to him in class.
 - **Math/Numbers**: Began showing rapid acceleration in understanding numbers and counting.
 
 #### 👅 Sensory & Physical Profile
 - **Dietary Progress**: By mid-2024, his food rigidity began to ease. He started eating some dinner at night with his family, moving away from his rigid dal-rice lunch routine.
 - **Travel Adaptation**: Adapted well to train travel in India (enjoying the changing visual landscapes from the window), but flight travel remained a major source of anxiety.
+
 
 ---
 
@@ -181,3 +195,4 @@ This document is a high-fidelity record of Avyaan Prasad's historical behavior, 
 - **Shadow Teacher / Therapy Assistant (Companion / MomKidCare)**:
   - *Rationale*: Hire a specialized assistant to sit with Avyaan for school runs, homework support, and physical play, leaving the mother with the mental energy needed to guide his core therapy.
 - **Upskilling Roadmap**: Reclaim 3–4 hours a day for the mother to study for the Goethe German C1 certificate or refresh Power BI skills to re-enter the workforce.
+ 
