@@ -142,3 +142,13 @@ timeline
   - Locally committed the new timeline file to Git.
 - **Key Decisions**:
   - Maintained absolute details and avoided high-level summarization to keep the timeline as a high-fidelity reference.
+
+### Session 6: 2026-07-19
+- **Goal**: Restructure timeline file to focus on behavioral changes and separate technical interventions.
+- **Actions Taken**:
+  - Refactored `avyaans_timeline.md` to organize findings by year under three main behavioral pillars: Socialization/Communication, Cognitive/Learning, and Sensory/Physical.
+  - Moved all technical research (Mini PC specs, drafting board setup, lighted keyboard choices, delegating work) into a separate, dedicated section at the end of the file.
+  - Committed changes and pushed the updated branch to the remote repository.
+- **Key Decisions**:
+  - Keep behavioral history clean and chronologically pure to facilitate building behavioral learning plans.
+  - Keep technical research items accessible but separate from the developmental narrative.
