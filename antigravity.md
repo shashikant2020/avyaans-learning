@@ -152,3 +152,13 @@ timeline
 - **Key Decisions**:
   - Keep behavioral history clean and chronologically pure to facilitate building behavioral learning plans.
   - Keep technical research items accessible but separate from the developmental narrative.
+
+### Session 7: 2026-07-19
+- **Goal**: Integrate detailed Ranchi playschool, diet, and therapy records into timeline.
+- **Actions Taken**:
+  - Updated `avyaans_timeline.md` to include detailed Ranchi diet routines (Kachhu/arbi sabji for lunch, boiled eggs, biscuits with milk, eating place routine, and father/mother behavior patterns).
+  - Added Ranchi playschool observations (12:00 PM half-day, non-disclosure of diagnosis, teachers noticing solitary behavior and feeding needs, and writing achievements vs. verbal exam limits).
+  - Detailed therapy locations (Lallan Academy and Hinoo area).
+  - Committed and pushed updates to the GitHub repository.
+- **Key Decisions**:
+  - Retain precise details of Avyaan's eating routines and playschool behaviors to provide a high-fidelity reference for formulating learning plans.
