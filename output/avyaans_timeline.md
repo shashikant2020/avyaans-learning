@@ -1,161 +1,183 @@
-# Avyaan Prasad - Comprehensive Chronological Timeline (2018–2026)
+# Avyaan Prasad - Comprehensive Behavioral & Developmental Timeline (2018–2026)
 
-This document consolidates every biographical, medical, educational, travel, and therapeutic detail provided for Avyaan Prasad across all records (including consolidated chat histories, school diaries, and transition documents). No detail has been omitted or summarized away; instead, they are structured chronologically to preserve the complete history of Avyaan's developmental journey.
-
----
-
-## 📌 Timeline Overview
-
-```mermaid
-gantt
-    title Avyaan's Chronological Milestones
-    dateFormat  YYYY-MM
-    section Berlin/Germany
-    Birth & Munich/Frankfurt Years           :active, 2018-07, 2022-12
-    Kita Vogelnest, Spandau                  : 2022-12, 2023-01
-    Ringelnatz-Grundschule, Berlin-Wittenau  : 2024-10, 2025-11
-    section Ranchi/Noida (India)
-    Ranchi Therapy (ISIRC/Lalan's)           : 2023-01, 2024-10
-    Noida Therapy & Sanchetana Schooling     : 2025-11, 2026-07
-```
+This document is a high-fidelity record of Avyaan Prasad's historical behavior, sensory profile, communication milestones, and cognitive capabilities over his first eight years. It is designed to serve as the baseline for researching, developing, and refining his personalized learning plans.
 
 ---
 
-## 📅 Chronological Detail by Year
-
-### 👶 2018: Birth & Infancy
-- **July 14, 2018**: Avyaan Prasad is born.
-- **Location**: Munich, Germany.
-- **First Year (0–12 Months)**:
-  - Development was noted as active, happy, and typical. 
-  - He ate well, played, and engaged in regular infant activities.
-  - *Parental Note*: While other infants around 7–8 months old might have displayed more intense responsiveness to social cues and human behavior, Avyaan was simply a happy, easygoing baby who played and ate without showing any warning signs that would suggest developmental or autistic differences.
+## 📋 Core Developmental Profile
+- **Current Age**: 8 years old (as of mid-2026)
+- **Primary Condition**: Autism Spectrum Disorder (ASD - ICD-10 F84.0), ADHD (ICD-10 F90.0), Mild Intellectual Disability (ICD-10 F70.0).
+- **Core Cognitive Style**: **Systemizing and Visual**. Avyaan processes the world through rules, grids, geometry, and numbers. He thrives on predictability and structure, while struggling with organic curves, unscheduled transitions, and complex social boundaries.
 
 ---
 
-### 🧸 2019–2020: Early Childhood & Early Skills
-- **Location**: Munich and Frankfurt, Germany.
-- **Move to Frankfurt**: In approximately November 2020, the family relocated from Munich to Frankfurt due to a school/job transfer. (He had secure admission in Munich but had to leave it for this move).
-- **Impact of Corona Pandemic**: The onset of the pandemic meant the family spent a significant amount of time isolated at home.
-- **Skills at Age 2 to 2.5**:
-  - Avyaan possessed a highly active rote memory (**Hyperlexia** and **Good Rote Memory**).
-  - He knew his own name and his entire family tree (could recite the names of all relatives on his father's side, grandfather's name, and details of village life in India).
-  - He easily memorized and recited standard nursery rhymes.
-  - He could count and recite numbers. He would stand, hold the wall with one hand for support, and recite numbers from 1 to 100 perfectly.
-  - **Flag & Number Cards**: His father printed out numbers (1 to 100) and names/flags of different countries on A4 sheets. Avyaan would look at them, point to each one, and say what they were.
-  - **Visual Recognition**: Using a 500-word picture book, he could point to and name any item shown in the pictures.
-  - **Language Preference**: He displayed a strong natural preference for English words and sounds over Hindi, showing high interest in English nursery rhymes and visual content online.
-  - **TV/Music Interest**: He loved watching song videos on the TV and would actively try to mimic the dance steps, showing a strong response to musical rhythms.
+## 📅 Year-by-Year Behavioral & Developmental History
+
+### 👶 Year 1 (2018–2019): Infancy
+*Lived in Munich, Germany.*
+
+#### 💬 Social Interaction & Communication
+- **Early Socialization**: He was generally a happy, easygoing infant. He did not show typical early indicators of distress.
+- **Comparison to Peers**: Looking back, typical infants around 7–8 months old are more actively responsive to human social cues and facial expressions. Avyaan was less socially curious about others, preferring to play quietly with objects, though he interacted normally with his immediate family.
+
+#### 🧠 Cognitive & Learning Capabilities
+- ** Rote Function**: Achieved typical infant milestones (sitting, crawling, reach-and-grasp) on a typical schedule.
+- **Play Behavior**: Satisfied with self-directed, simple play (shaking toys, exploring textures).
+
+#### 👅 Sensory & Physical Profile
+- **Diet & Eating**: No feeding issues during this year. He transitioned smoothly to purées and soft baby food.
 
 ---
 
-### ⚡ 2021: Father's Surgery & First Signs of Regression
-- **Location**: Germany (Frankfurt/Berlin).
-- **March 20–21, 2021**: Avyaan's father undergoes bypass surgery.
-- **Developmental Regression (Age 3 onwards)**:
-  - Following the father's surgery and the associated family stress, Avyaan was isolated at home for about 5–6 months.
-  - He experienced a noticeable regression (loss of previously acquired skills).
-  - He lost interest in reciting the names of relatives and country flags. When shown cards or asked "Who is this?", he ignored them.
-  - He stopped speaking in the structured way he did before and withdrew into his own world.
-  - **Behavioral Changes**: Developed stereotypic repetitive hand movements (hand stimming), limited eye contact (especially with strangers), and high distractibility.
-  - **Sensory Issues with Food**:
-    - Developed severe **Sensory Feeding Issues**. He refused to eat solid foods, throwing tantrums during meals.
-    - He would only eat very soft or mashed foods, biscuits, and chocolates. He had difficulty swallowing texturized food and would gag or spit it out.
-  - **First Kindergarten Experience**:
-    - He was enrolled in a local kindergarten, but the teachers noted that his behavior was highly different from his peers.
-    - While he talked a bit at home, he was silent and isolated in class.
-    - Due to these difficulties, he was eventually taken out of this school.
+### 🧸 Years 2–3 (2019–2021): Early Skills & Hyperlexia
+*Lived in Munich and Frankfurt, Germany.*
+
+#### 💬 Social Interaction & Communication
+- **Solitary Focus**: While he was talkative and happy around his parents, he did not seek out social interaction with other children.
+- **COVID-19 Isolation**: Due to the pandemic, he spent the vast majority of his time at home with his parents, limiting his exposure to external social environments.
+
+#### 🧠 Cognitive & Learning Capabilities
+- **Hyperlexia & High-Fidelity Rote Memory**:
+  - Showed a massive capability for memorizing facts. He memorized his entire family tree, reciting the names of all relatives on his father's side, grandfather's name, and details of their village in India.
+  - Memorized and recited standard nursery rhymes.
+  - Recited numbers from 1 to 100 perfectly while holding onto the wall with one hand for support.
+  - **Flag & Card Memory**: Could recognize and name flags of various countries from a distance on a mobile screen without mistakes. If printed on A4 sheets, he would systematically point to and name each country and flag.
+  - **Vocabulary Recognition**: Could identify and point to any picture in a 500-word children's book.
+- **Language Bias**: Displayed a strong preference for English phonetics and vocabulary over Hindi, actively choosing English media and rhymes.
+- **Pattern Matching**: Highly engaged by musical rhythms on TV, attempting to coordinate his body to dance in sync with them.
+
+#### 👅 Sensory & Physical Profile
+- **Motor Skills**: Steady balance and strong finger pointing.
+- **Diet**: Ate a standard toddler diet of soft foods, with no major sensory aversions noted yet.
 
 ---
 
-### 🚗 2022: Kindergarten & Pattern Play
-- **Location**: Lived in Berlin (Achenbachstraße 11), Germany.
-- **School**: Enrolled at the **"Kita Vogelnest"** in Spandau, Berlin.
-- **Behavior & Patterns**:
-  - He loved patterns and solving puzzles, moving pieces back and forth systematically until they were solved.
-  - **Eating Intervention**: Out of frustration with his severe food refusal, his father briefly used strict, forceful methods (locking him in a room and insisting he eat roti, sabji, and dal). Avyaan began eating these foods, but the father realized he was doing so out of fear and immediately stopped using physical force or punishment, shifting to gentler approaches.
-  - **The Toy Train**: His father bought him a remote-controlled, battery-operated German toy train. Avyaan loved placing it on the tracks and watching it spin in circles for hours. This predictable, repetitive visual motion calmed his brain (visual stimming). When the train was later returned/removed, he lost this safe space and became dysregulated.
-- **Exemptions & Appointments**: The family spent over a year trying to secure diagnostic consultations and support in Berlin, but were repeatedly told that waitlists were at least a year long.
+### ⚡ Year 3 (2021–2022): Regression & Isolation
+*Lived in Germany (Frankfurt/Berlin).*
+
+#### 💬 Social Interaction & Communication
+- **The Turning Point (Regression)**: Following his father's bypass surgery in March 2021, Avyaan was isolated at home for 5–6 months. During this time, he experienced a severe regression.
+- **Loss of Communication**:
+  - Stopped reciting the names of relatives and country flags. 
+  - Ignored flashcards and did not show interest when asked "Who is this?".
+  - Withdrew from verbal conversations and became silent.
+- **Kindergarten Placement**: Enrolled in a local kindergarten but could not integrate. While he spoke occasionally at home, he was completely silent in class, refusing to interact with teachers or peers, which led to his removal from the school.
+- **Limited Eye Contact**: Avoided eye contact, especially with strangers.
+
+#### 🧠 Cognitive & Learning Capabilities
+- **High Distractibility**: Became highly hyperactive, restless, and unable to focus on activities that were not self-directed.
+- **Puzzle-Solving**: Retained strong visual pattern matching, solving puzzles by trial and error, moving pieces back and forth systematically.
+
+#### 👅 Sensory & Physical Profile
+- **Sensory Stimming**: Developed stereotypic repetitive hand movements (flapping and finger posturing).
+- **Severe Sensory Feeding Issues**:
+  - Began rejecting textured and solid foods. thrown into extreme distress by dry or textured foods.
+  - Developed a highly restricted diet consisting almost exclusively of soft foods, biscuits, and chocolates. Had difficulties moving food to the back of his mouth to swallow, gagging easily.
+- **Intervention (Food Rigidity)**: Out of desperation, his father tried force-feeding him (locking him in his room until he finished his roti, sabji, and dal). While Avyaan began eating them out of fear, the father quickly realized this was causing trauma and stopped all physical force, returning to a patient, non-punitive routine.
 
 ---
 
-### ✈️ 2023: Relocation to Ranchi, India & Intensive Therapy
-- **January 30, 2023**: Lived in Berlin, then boarded a 14-hour flight to India for a planned short holiday.
-- **Flight Trauma**: Avyaan experienced extreme distress, flight anxiety, and sensory overload at the airport and inside the cabin. He cried, stamped his feet, and slept tightly in his mother's lap for the entire 14 hours out of fear.
-- **Strategic Decision**: Because of the long diagnostic waitlists in Germany, the parents decided to stay in India to access immediate therapy.
-- **Ranchi Stay (January 2023 – October 2024)**:
-  - Enrolled at **ISIRC** (Institute of Sensory Integration & Research Centre) and **Lalan's Academy** in Ranchi (Jharkhand) for intensive therapies (Occupational Therapy, Speech Therapy, Sensory Integration, and ABA).
-  - Enrolled in a local play school in Ranchi. The parents chose not to disclose his autism diagnosis initially to see how the teachers perceived him naturally.
-  - **Rigid Diet**: His eating remained highly rigid. For lunch, he would only eat rice, dal, and a single raw/lightly-cooked vegetable ("kachhi sabji"). This strict pattern lasted throughout 2023 and most of 2024.
-  - **Language of Therapy**: Therapies were conducted in his mother tongue, **Hindi**, without medication. Pushing the therapy in Hindi led to faster developmental progress since he could understand the therapists clearly.
-  - **Travel Logs**:
-    - **January 2023**: Family relocated to India.
-    - **August 2023**: Father visited the family in India.
-    - **August 23, 2023**: Diagnostic certificate confirmed the necessity of regular, ongoing therapeutic treatment.
+### 🚗 Year 4 (2022–2023): Berlin Kita & Visual Stimming
+*Lived in Berlin (Achenbachstraße 11), Germany.*
+
+#### 💬 Social Interaction & Communication
+- **Kita Vogelnest**: Attended play school in Spandau. Struggled with class routines and social boundaries.
+- **Solo Play**: Retained a strict boundary when drawing; he would actively send his parents away ("Go away") and insist on drawing alone. Drawing became his cognitive safe haven, free from social demands or communication pressure.
+
+#### 🧠 Cognitive & Learning Capabilities
+- **Visual Stimming & Systemizing**:
+  - Loved playing with a remote-controlled, battery-operated German toy train. He would sit and watch it travel in circles on the tracks for hours. The predictable, repeating movement was a crucial self-regulation tool. When the train was removed, he experienced significant dysregulation.
+
+#### 👅 Sensory & Physical Profile
+- **Flight Anxiety**: The relocation flight to India in January 2023 caused extreme sensory panic. The airport noise, lights, and cabin pressure caused a major meltdown. He cried and screamed until he fell asleep on his mother's lap, staying there in fear for the entire 14-hour flight.
+- **Dietary Rigidity**: Upon arriving in Ranchi, India, he locked into a rigid eating pattern, refusing to eat anything for lunch except rice, dal, and one raw/lightly-cooked vegetable ("kachhi sabji").
 
 ---
 
-### 🔄 2024: Ranchi Progress & Return to Germany
-- **Location**: Ranchi, India, then Berlin, Germany.
-- **Travel Logs (Father's commute to maintain family bond)**:
-  - **February 2024**: Travel from India to Berlin.
-  - **April 2024**: Travel from Berlin to India.
-  - **June 2024**: Travel from India to Berlin.
-  - **September 2024**: Travel from Berlin to India.
-  - **October 2024**: Family returned to Berlin together.
-- **Developmental Progress**:
-  - By mid-2024, Avyaan's eating rigidity began to ease. He started eating a bit of dinner at night with his father.
-- **October 20, 2024**: Avyaan returns to Germany.
-- **October 24, 2024**: Officially re-registered (Anmeldung) at Büchnerring 38, 13409 Berlin, Germany.
-- **School**: Enrolled at the **Ringelnatz-Grundschule** in Berlin-Wittenau for the 2024/2025 academic year.
-- **Child Benefit (Kindergeld)**: On November 15, 2024, a detailed response explaining the medical necessity of the India stay was sent to the Familienkasse.
+### 🔄 Years 5–6 (2023–2025): Intensive Therapy in Ranchi
+*Lived in Ranchi (Jharkhand), India.*
+
+#### 💬 Social Interaction & Communication
+- **Play School in Ranchi**: Enrolled in a play school. His parents did not disclose his diagnosis to observe how teachers responded to his natural behaviors (stimming, scripting, solitary play).
+- **Therapy Progress in Hindi**: Attended intensive therapy at **ISIRC** and **Lalan's Academy**. Pushing therapies in Hindi (his mother tongue) was highly successful. Because he did not have to translate words, he understood therapists' instructions and cues much faster, leading to a jump in his receptive language.
+
+#### 🧠 Cognitive & Learning Capabilities
+- **Visual Mapping**: Continued to excel at structured, geometric visual tasks.
+- **Math/Numbers**: Began showing rapid acceleration in understanding numbers and counting.
+
+#### 👅 Sensory & Physical Profile
+- **Dietary Progress**: By mid-2024, his food rigidity began to ease. He started eating some dinner at night with his family, moving away from his rigid dal-rice lunch routine.
+- **Travel Adaptation**: Adapted well to train travel in India (enjoying the changing visual landscapes from the window), but flight travel remained a major source of anxiety.
 
 ---
 
-### 🩺 2025: Official Diagnoses & Return to India
-- **Location**: Berlin, Germany, then Gaur City 1, Noida, India.
-- **German Schooling & Support**:
-  - Attended Ringelnatz-Grundschule. Showed progress in developing routines and confidence, though he required individual special support (Sonderpädagogische Förderung). 
-  - He displayed a strong urge to move during lessons and breaks and could not participate in regular lessons without assistance.
-  - **After-School Care (eFöB)**: Approved for supplementary after-school care from September 1, 2025, to July 31, 2027.
-- **Official Diagnoses**:
-  - **March 20, 2025**: Early Childhood Autism (F84.0) confirmed via ADI-R.
-  - **April 24, 2025**: Autism confirmed via ADOS-2.
-  - **May 22, 2025**: SON-R non-verbal intelligence testing performed. Confirmed potential for higher achievement but highlighted severe distractibility.
-  - **July 10, 2025**: Official medical report issued by Dr. med. Basel Allozy confirming Autism (F84.0), ADHD (F90.0), and Mild Intellectual Disability (F70.0).
-- **Administrative Status**:
-  - **Severe Disability Pass (LAGESo)**: File D06 4123028 (PIN 99649) application submitted; pending insurance details.
-  - **Care Grade (Pflegegrad)**: Assessment put on hold because Avyaan returned to India.
-  - **Rundfunkbeitrag**: Deregistered in October 2025.
-- **Second Relocation to India (Late 2025)**:
-  - Relocated to Gaur City 1, Greater Noida, for further specialized therapies in Hindi.
-  - Enrolled in specialized local development centers: **Nurturers** and **My Therapist Development Center** (specialized Autism/ADHD support).
-  - Participated in physical activities like skating at the **Rollinround Skating Academy** in Gaur City Mall (helping with balance and sensory input).
+### 🏫 Years 6–7 (Oct 2024 – Late 2025): Berlin Schooling & Testing
+*Lived in Berlin (Büdnerring 38), Germany.*
+
+#### 💬 Social Interaction & Communication
+- **Ringelnatz-Grundschule Wittenau**: Transitioned into primary school. He developed school routines and gained confidence but required constant 1-on-1 support.
+- **Restlessness in Class**: Exhibited a strong urge to move constantly during lessons and breaks, making it difficult to participate in regular class activities without active redirection.
+
+#### 🧠 Cognitive & Learning Capabilities
+- **Official Diagnoses**: Gold-standard clinical testing in early 2025 (ADOS-2 and ADI-R) confirmed Autism (F84.0), ADHD (F90.0), and Mild Intellectual Disability (F70.0).
+- **Academic Progress**:
+  - Showed a strong capability for writing numbers 1 to 50 in standard notebook grids.
+  - Learned to write letters A to Z.
+  - **Inventive Spelling Pattern**: Exhibited a "Vowel Deletion Pattern." Instead of copying words letter-for-letter, he compressed them phonetically by removing the vowels (e.g., writing `APL` for Apple, `WTR` for Water, `ZBR` for Zebra, `TMTR` for Tomato).
+  - **Case Mixing**: Mixes uppercase and lowercase letters within words (e.g., `THRee`, `eLeVen`). In his brain, letters are processed as independent visual shapes rather than strict grammatical rules.
+
+#### 👅 Sensory & Physical Profile
+- **Sensory Integration**: Continued to seek intense visual and motor stimulation to regulate his nervous system.
 
 ---
 
-### 🏫 2026: Sanchetana (Noida) & Current Behaviors
-- **Location**: Gaur City 1, Noida Extension, India.
-- **School**: Enrolled in **Sanchetana** (the special education wing of Billabong High School) in Greater Noida starting February 2026. Ms. Khushbi Sethi is assigned as his special educator for the 2026–2027 academic session.
-- **School Performance (April – May 2026)**:
-  - **OT Focus**: Sensory diet, midline walking, tripod grasp, visual tracking, bilateral coordination, and scissor skills (cutting paper).
-  - **Speech Focus**: Sentence structures, understanding "Wh-" questions, action verbs, and kinship items.
-  - **Academic Progress**: Achieved 100% accuracy on vertical single-digit addition. Demonstrated complete mastery of skip-counting by 2s and 3s (even from non-standard bases like 52, 55, 58...).
-  - **Drawing Milestones**: Showed exceptional geometric scanning. Successfully copied clean 2D worksheets (trucks, robots, boats). Drew a highly detailed 3D ride-on toy car, accurately capturing the happy-face and sad-face patterns on the front and rear wheel hubcaps respectively.
-- **Current Behavioral & Sensory Profile**:
-  - **Hypernumeracy**: Displays an intense fascination with numbers. Spends time typing numbers (1 to 100) or years (2026, 2025, 2024) on the phone screen to create order and calm his mind.
-  - **Verbal Stimming & Echolalia**: Repeatedly chants numbers and scripted phrases like *"7171 A71 Hai 7171 71 Ho Gaya"* (71 is done) and *"No 7 No 7 No 7"*.
-  - **Video Recording**: Insists on turning on the mobile camera and recording himself performing daily tasks (like drinking mango juice) to gain visual feedback and make his actions feel safe and predictable.
-  - **Sensory Seeking (Hair-Touching)**: Frequently touches and kisses long hair (of family members and occasionally female strangers in public places like malls) to seek soft tactile, olfactory (shampoo/perfume), and lip-pressure sensations.
-  - **Summer Vacation**: Began summer break on May 25, 2026.
-- **Current Objectives**: Setting up a permanent Windows Mini PC station at home, acquiring a lighted keyboard (Casio LK-S250 or Yamaha EZ-300), and preparing the A3 drafting board setup for solo blueprint drawing.
+### 🏫 Year 8 (Late 2025 – Present 2026): Sanchetana (Noida)
+*Lived in Gaur City 1, Noida, India.*
+
+#### 💬 Social Interaction & Communication
+- **Socialization Focus**: Currently attending **Sanchetana** (Billabong High). The school is focusing heavily on socialization, abstract thinking, and comprehension.
+- **Verbal Stimming & Echolalia**: Frequently engages in verbal scripting, chanting numbers or phrases like *"7171 A71 Hai 7171 71 Ho Gaya"* (derived from battery charging/Galaxy A71 phone screens) and *"No 7 No 7 No 7"* to comfort himself and focus.
+- **Tactile Sensory Seeking**: Touches and kisses long hair (of family members and female strangers in public places like malls) to seek soft textures and olfactory input (shampoo/perfume).
+- **Self-Monitoring (Video Recording)**: Insists on recording himself on the phone camera doing everyday tasks (like drinking juice) to validate his actions and make them feel safe and predictable.
+
+#### 🧠 Cognitive & Learning Capabilities
+- **Mathematics**: Shows advanced skills, achieving 100% accuracy in vertical single-digit addition and skip-counting by 2s and 3s (even from non-standard bases like 52, 55, 58...).
+- **Fine Motor Skills**: Excels at paper cutting with safety scissors, displaying strong bilateral coordination and spatial awareness.
+- **Drawing Assembly**: Shows excellent geometric processing. He copied 2D structures (robots, trucks) with high precision but skipped complex organic details (e.g., drawing just the bowl and bone, skipping the cat).
+- **Ride-On Car Drawing**: Showed intense visual scanning by noticing and drawing the difference between the front wheel hubcap (happy face) and the rear wheel hubcap (sad face) on a real-world toy.
+
+#### 👅 Sensory & Physical Profile
+- **Physical Activity**: Practices skating at the Rollinround Skating Academy, which provides essential proprioceptive input and balance training.
+- **Flight Anxiety**: Remains a major hurdle for his planned return to Berlin.
 
 ---
 
-## 🔍 Confirmation of Detailed Story Coverage
-*As requested by the user, here is the confirmation of the narrative coverage:*
+## 🛠️ Separated Section: Father's Research & Technical Interventions
 
-> [!IMPORTANT]
-> **Story Coverage Confirmation**: 
-> - **Detailed Narrative Story**: Your personal, narrative recollections (first words, regression details, Ranchi play school details, food struggles, train play, and travel details) are covered in rich detail up to **late 2024** (up to the point where the family returned to Berlin in October 2024).
-> - **2025 to 2026 (The Current Era)**: The detailed story for these years is derived from official clinical diagnostics (Dr. Allozy's July 2025 report), school diaries (Sanchetana logs from April–May 2026), and administrative documents. There is **no narrative chat story** from you covering the late 2024 to late 2025 gap.
+*This section captures the technical adjustments, equipment, and home-office strategies investigated by Avyaan's father to support his behavioral and learning needs.*
+
+### 🖥️ 1. Digital Workstation Setup
+- **Windows Mini PC (AMD Ryzen 5 or Intel i5)**:
+  - *Rationale*: A mini PC is a "stationary appliance" rather than a portable toy (like a tablet). It establishes a clear boundary: *"The desk is where the digital world lives,"* stopping constant meltdowns/negotiations over screen time on the sofa or bed.
+  - *Specs*: Minimum 6 Cores / 12 Threads (Ryzen 5 5000 series or Core i5 11th Gen), 16GB RAM, 512GB SSD to handle local Python environments, MySQL/PostgreSQL databases, Jupyter Notebooks, and web-based data tools (Databricks) without lag.
+- **A3 Portable Drafting Board (Isomars melamin parallel motion)**:
+  - *Rationale*: Clamps the paper flat and uses a sliding horizontal ruler. This provides mechanical feedback—ruling out human correction which Avyaan rejects. If the ruler is locked, the line is straight, giving him the precise geometry his systemizing brain craves.
+- **Pencils & Paper**: Mechanical clutch pencils (0.7mm) to maintain constant line thickness, and Isometric Graph paper (faint triangular grids) to draw 3D blocks and shapes without complex math.
+
+### 🎹 2. Lighted Keyboards for Fine Motor Coordination
+- **Casio Casiotone LK-S250 or Yamaha EZ-300**:
+  - *Rationale*: Key lighting systems guide his eyes and fingers across the scale (visual tracking).
+  - *Lesson Mode*: Both feature "waiting logic" (the background music stops until Avyaan presses the correct lit key), which builds attention span, task completion, and waiting tolerance.
+  - *Touch Response*: Provides instant acoustic feedback for force and pressure modulation (therapists' OT goal).
+
+### 📱 3. Mobile Device Management
+- **The "Narrator" Technique**: Before starting a recording (which Avyaan uses as a reward), require him to say the target words (e.g., "Say: Drink mango juice" -> wait for attempt -> hit record).
+- **Mirror Substitution**: Place a large wall mirror in front of his eating/play station. This replaces the mobile phone screen by providing the same real-world visual feedback without the digital device.
+
+### 🏡 4. Mother's Re-entry & Housework Delegation
+- **Cook/Prep Helper (Broomees / MyGate)**:
+  - *Rationale*: Shift the mother's energy from manual labor (chopping, kneading, dishwashing) to managing the household system, saving 2 hours of physical exhaustion daily.
+  - *Implementation*: "The Dispenser Method" (pre-measuring oil and spices in daily containers) to maintain strict quality and hygiene control over Indian cooking without doing the physical labor.
+- **Shadow Teacher / Therapy Assistant (Companion / MomKidCare)**:
+  - *Rationale*: Hire a specialized assistant to sit with Avyaan for school runs, homework support, and physical play, leaving the mother with the mental energy needed to guide his core therapy.
+- **Upskilling Roadmap**: Reclaim 3–4 hours a day for the mother to study for the Goethe German C1 certificate or refresh Power BI skills to re-enter the workforce.
