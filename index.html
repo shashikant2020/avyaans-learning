@@ -825,14 +825,14 @@
       const size = parseInt(document.getElementById('grid-size').value);
       const difficulty = document.getElementById('difficulty').value;
 
-      // Define target prefilled clue counts
+      // Define target prefilled clue counts specifically optimized for learning deduction
       let targetClues = 8;
       if (size === 4) {
-        targetClues = difficulty === 'easy' ? 12 : (difficulty === 'medium' ? 9 : 7);
+        targetClues = difficulty === 'easy' ? 13 : (difficulty === 'medium' ? 11 : 9);
       } else if (size === 6) {
-        targetClues = difficulty === 'easy' ? 24 : (difficulty === 'medium' ? 18 : 14);
+        targetClues = difficulty === 'easy' ? 30 : (difficulty === 'medium' ? 25 : 18);
       } else {
-        targetClues = difficulty === 'easy' ? 42 : (difficulty === 'medium' ? 32 : 24);
+        targetClues = difficulty === 'easy' ? 70 : (difficulty === 'medium' ? 58 : 42);
       }
 
       // Generate exactly 4 Sudoku puzzles
