@@ -474,16 +474,15 @@
       background-color: rgba(241, 245, 249, 0.8);
     }
 
-    /* Visual Highlighting (Interactive Mode) */
+    /* Visual Highlighting (Interactive Mode - Soft Guide Style) */
     .sudoku-cell.highlight-line {
       background-color: var(--highlight-bg) !important;
-      outline: 1.5px dashed var(--primary);
-      z-index: 10;
+      /* Outlines removed from highlighted line to prevent darkening/cluttering numbers */
     }
     .sudoku-cell.highlight-center {
       background-color: var(--highlight-center) !important;
-      outline: 2px solid var(--primary);
-      z-index: 20;
+      outline: 2.5px solid var(--primary); /* Keep border highlight strictly on active cell */
+      z-index: 10;
     }
 
     .cell-input.correct {

@@ -20,8 +20,8 @@
       --error: #ef4444;
       --grid-border: #cbd5e1; /* Faint gray for general inner lines */
       --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-      --highlight-bg: rgba(59, 130, 246, 0.06);
-      --highlight-center: rgba(59, 130, 246, 0.15);
+      --highlight-bg: #f1f7fc; /* Very soft light pastel blue background tint */
+      --highlight-center: #e0f2fe; /* Soft sky blue background tint for targeted cell */
     }
 
     * {
@@ -474,16 +474,15 @@
       background-color: rgba(241, 245, 249, 0.8);
     }
 
-    /* Visual Highlighting (Interactive Mode) */
+    /* Visual Highlighting (Interactive Mode - Soft Guide Style) */
     .sudoku-cell.highlight-line {
       background-color: var(--highlight-bg) !important;
-      outline: 1.5px dashed var(--primary);
-      z-index: 10;
+      /* Outlines removed from highlighted line to prevent darkening/cluttering numbers */
     }
     .sudoku-cell.highlight-center {
       background-color: var(--highlight-center) !important;
-      outline: 2px solid var(--primary);
-      z-index: 20;
+      outline: 2.5px solid var(--primary); /* Keep border highlight strictly on active cell */
+      z-index: 10;
     }
 
     .cell-input.correct {
