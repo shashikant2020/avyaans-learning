@@ -18,11 +18,10 @@
       --primary-dark: #1d4ed8;
       --success: #10b981;
       --error: #ef4444;
-      --grid-border: #0f172a;
-      --grid-inner: #cbd5e1;
+      --grid-border: #cbd5e1; /* Faint gray for general inner lines */
       --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-      --highlight-bg: rgba(59, 130, 246, 0.08);
-      --highlight-center: rgba(59, 130, 246, 0.2);
+      --highlight-bg: rgba(59, 130, 246, 0.06);
+      --highlight-center: rgba(59, 130, 246, 0.15);
     }
 
     * {
@@ -368,7 +367,7 @@
     .sudoku-board {
       display: grid;
       background-color: var(--grid-border);
-      border: 3.5px solid var(--grid-border);
+      border: 3.5px solid #0f172a; /* Slate outermost board border (Big Square Frame) */
       gap: 1.5px;
     }
 
@@ -393,6 +392,7 @@
     }
 
     .sudoku-cell {
+      background: white !important; /* Pure white background to preserve row/col tracing */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -400,57 +400,49 @@
       aspect-ratio: 1;
     }
 
-    /* Color coding for blocks (decent pastel styling) */
+    /* Color definitions for block borders only (Variables) */
     
-    /* 4x4 Grid - 4 distinct blocks */
-    .board-size-4 .sudoku-cell[data-box="0"] { background-color: #e0f2fe !important; } /* sky blue */
-    .board-size-4 .sudoku-cell[data-box="1"] { background-color: #dcfce7 !important; } /* mint green */
-    .board-size-4 .sudoku-cell[data-box="2"] { background-color: #fef3c7 !important; } /* warm yellow */
-    .board-size-4 .sudoku-cell[data-box="3"] { background-color: #f3e8ff !important; } /* light lavender */
+    /* 4x4 Grid Block Colors */
+    .board-size-4 .sudoku-cell[data-box="0"] { --box-color: #3b82f6; } /* Royal Blue */
+    .board-size-4 .sudoku-cell[data-box="1"] { --box-color: #10b981; } /* Emerald Green */
+    .board-size-4 .sudoku-cell[data-box="2"] { --box-color: #f59e0b; } /* Amber Orange */
+    .board-size-4 .sudoku-cell[data-box="3"] { --box-color: #8b5cf6; } /* Purple */
 
-    /* 6x6 Grid - 6 distinct blocks */
-    .board-size-6 .sudoku-cell[data-box="0"] { background-color: #e0f2fe !important; }
-    .board-size-6 .sudoku-cell[data-box="1"] { background-color: #dcfce7 !important; }
-    .board-size-6 .sudoku-cell[data-box="2"] { background-color: #fef3c7 !important; }
-    .board-size-6 .sudoku-cell[data-box="3"] { background-color: #f3e8ff !important; }
-    .board-size-6 .sudoku-cell[data-box="4"] { background-color: #fee2e2 !important; } /* soft rose */
-    .board-size-6 .sudoku-cell[data-box="5"] { background-color: #ffedd5 !important; } /* soft orange */
+    /* 6x6 Grid Block Colors */
+    .board-size-6 .sudoku-cell[data-box="0"] { --box-color: #3b82f6; }
+    .board-size-6 .sudoku-cell[data-box="1"] { --box-color: #10b981; }
+    .board-size-6 .sudoku-cell[data-box="2"] { --box-color: #f59e0b; }
+    .board-size-6 .sudoku-cell[data-box="3"] { --box-color: #8b5cf6; }
+    .board-size-6 .sudoku-cell[data-box="4"] { --box-color: #ec4899; } /* Pink */
+    .board-size-6 .sudoku-cell[data-box="5"] { --box-color: #06b6d4; } /* Cyan */
 
-    /* 9x9 Grid - clean alternating checkered pastel style */
-    .board-size-9 .sudoku-cell { background-color: #ffffff !important; }
+    /* 9x9 Grid Block Colors (Clean alternating checkered style borders) */
     .board-size-9 .sudoku-cell[data-box="0"],
     .board-size-9 .sudoku-cell[data-box="2"],
     .board-size-9 .sudoku-cell[data-box="4"],
     .board-size-9 .sudoku-cell[data-box="6"],
     .board-size-9 .sudoku-cell[data-box="8"] {
-      background-color: #e0f2fe !important; /* sky blue checkered pattern */
+      --box-color: #3b82f6; /* Blue borders for odd blocks */
+    }
+    .board-size-9 .sudoku-cell[data-box="1"],
+    .board-size-9 .sudoku-cell[data-box="3"],
+    .board-size-9 .sudoku-cell[data-box="5"],
+    .board-size-9 .sudoku-cell[data-box="7"] {
+      --box-color: #64748b; /* Slate borders for even blocks */
     }
 
-    /* Dividers 4x4 */
-    .board-size-4 .sudoku-cell:nth-child(4n+2) {
-      border-right: 2.5px solid var(--grid-border);
+    /* Dynamic Border Thickness Styles */
+    .sudoku-cell.block-top {
+      border-top: 3px solid var(--box-color) !important;
     }
-    .board-size-4 .sudoku-cell:nth-child(n+5):nth-child(-n+8) {
-      border-bottom: 2.5px solid var(--grid-border);
+    .sudoku-cell.block-bottom {
+      border-bottom: 3px solid var(--box-color) !important;
     }
-
-    /* Dividers 6x6 (sub-grid size 2 rows, 3 columns) */
-    .board-size-6 .sudoku-cell:nth-child(6n+3) {
-      border-right: 2.5px solid var(--grid-border);
+    .sudoku-cell.block-left {
+      border-left: 3px solid var(--box-color) !important;
     }
-    .board-size-6 .sudoku-cell:nth-child(n+7):nth-child(-n+12),
-    .board-size-6 .sudoku-cell:nth-child(n+19):nth-child(-n+24) {
-      border-bottom: 2.5px solid var(--grid-border);
-    }
-
-    /* Dividers 9x9 (sub-grid size 3x3) */
-    .board-size-9 .sudoku-cell:nth-child(9n+3),
-    .board-size-9 .sudoku-cell:nth-child(9n+6) {
-      border-right: 2.5px solid var(--grid-border);
-    }
-    .board-size-9 .sudoku-cell:nth-child(n+19):nth-child(-n+27),
-    .board-size-9 .sudoku-cell:nth-child(n+46):nth-child(-n+54) {
-      border-bottom: 2.5px solid var(--grid-border);
+    .sudoku-cell.block-right {
+      border-right: 3px solid var(--box-color) !important;
     }
 
     .cell-value {
@@ -478,7 +470,7 @@
     .board-size-9 .cell-input { font-size: 1.05rem; }
 
     .cell-input:focus {
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(241, 245, 249, 0.8);
     }
 
     /* Visual Highlighting (Interactive Mode) */
@@ -1082,6 +1074,12 @@
             cell.setAttribute('data-col', c);
             cell.setAttribute('data-box', b);
             cell.setAttribute('data-board', i);
+
+            // Add border positioning class labels
+            if (r % blockRows === 0) cell.classList.add('block-top');
+            if (r % blockRows === blockRows - 1) cell.classList.add('block-bottom');
+            if (c % blockCols === 0) cell.classList.add('block-left');
+            if (c % blockCols === blockCols - 1) cell.classList.add('block-right');
 
             if (value !== 0) {
               cell.innerHTML = `<span class="cell-value">${value}</span>`;
