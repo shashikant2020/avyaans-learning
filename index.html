@@ -623,10 +623,14 @@
 
     @media print {
       body {
-        background: white;
-        color: black;
-        margin: 0;
-        padding: 0;
+        background: white !important;
+        color: black !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        min-height: auto !important;
+        height: auto !important;
+        overflow: hidden !important; /* Prevent browser from spawning blank second page */
       }
       .sidebar {
         display: none !important;
@@ -642,13 +646,16 @@
         padding: 0 !important;
         width: 100% !important;
         min-height: auto !important;
+        height: auto !important;
+        display: block !important;
+        overflow: hidden !important; /* Block overflow page breaks */
       }
       .page-container {
         width: 100% !important; /* Fill page width dynamically */
         max-width: 190mm !important; /* Fits A4 & Letter safely on desktop print, scales down dynamically on mobile print */
         height: auto !important; /* Let height flow naturally to avoid split overflows */
-        max-height: 260mm !important; /* Safety constraint */
-        padding: 10mm 15mm !important;
+        max-height: 258mm !important; /* Safety constraint */
+        padding: 4mm 8mm !important; /* Reduced padding to guarantee 1-page fit under all margin configurations */
         margin: 0 auto !important;
         box-shadow: none !important;
         border: none !important;
@@ -659,7 +666,7 @@
         display: flex !important;
         flex-direction: column !important;
         justify-content: flex-start !important; /* Align content tightly to save space */
-        gap: 15px !important;
+        gap: 8px !important;
       }
       .puzzles-grid {
         display: grid !important;
