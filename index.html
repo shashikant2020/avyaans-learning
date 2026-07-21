@@ -167,11 +167,11 @@
       background: white;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       border-radius: 12px;
-      padding: 10mm 15mm;
+      padding: 10mm 12mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 15px;
+      gap: 10px;
       position: relative;
       box-sizing: border-box;
     }
@@ -182,19 +182,19 @@
       justify-content: space-between;
       align-items: baseline;
       border-bottom: 2px dashed #e2e8f0;
-      padding-bottom: 8px;
+      padding-bottom: 6px;
       width: 100%;
     }
 
     .header-title {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: -0.5px;
     }
 
     .header-date {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--text-muted);
     }
@@ -203,42 +203,42 @@
     .rules-section {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 10px 15px;
+      border-radius: 10px;
+      padding: 8px 12px;
     }
 
     .rules-title {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: var(--text-main);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       text-align: center;
     }
 
     .rules-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+      gap: 12px;
     }
 
     .rule-card {
       background: white;
       border: 1px solid #e2e8f0;
       border-radius: 8px;
-      padding: 8px;
+      padding: 6px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 4px;
       align-items: center;
     }
 
     .rule-header {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       font-weight: 700;
       color: #334155;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
       display: flex;
       align-items: center;
       gap: 4px;
@@ -248,7 +248,7 @@
     .visual-flow {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 4px;
       width: 100%;
     }
     .visual-row {
@@ -259,11 +259,11 @@
       width: 100%;
     }
     .vis-cell {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       border: 1px solid #cbd5e1;
       border-radius: 4px;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 700;
       display: flex;
       justify-content: center;
@@ -272,8 +272,8 @@
       color: #334155;
     }
     .vis-indicator {
-      font-size: 0.85rem;
-      margin-left: 3px;
+      font-size: 0.8rem;
+      margin-left: 2px;
     }
     .visual-flow-columns {
       display: flex;
@@ -298,12 +298,12 @@
     .visual-box-group {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
     }
     .visual-box-2x2 {
       display: grid;
-      grid-template-columns: repeat(2, 18px);
-      grid-template-rows: repeat(2, 18px);
+      grid-template-columns: repeat(2, 16px);
+      grid-template-rows: repeat(2, 16px);
       gap: 2px;
       border: 1.5px solid #475569;
       padding: 1px;
@@ -314,7 +314,7 @@
       width: 100%;
       height: 100%;
       border: 0.5px solid #94a3b8;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
     }
 
     /* Puzzles Layout inside the sheet (Maximized height) */
@@ -322,7 +322,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      gap: 20px;
+      gap: 15px;
       flex-grow: 1;
     }
 
@@ -340,23 +340,23 @@
 
     .puzzle-header {
       width: 100%;
-      max-width: 310px; /* Aligns header precisely with the board width */
+      max-width: 300px; /* Aligns header precisely with the board width */
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #f1f5f9;
-      padding-bottom: 4px;
-      margin-bottom: 4px;
+      padding-bottom: 2px;
+      margin-bottom: 2px;
     }
 
     .puzzle-title {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 700;
       color: #1e293b;
     }
 
     .puzzle-badge {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 600;
       padding: 1px 6px;
       border-radius: 10px;
@@ -372,24 +372,24 @@
       gap: 1.5px;
     }
 
-    /* Sizing per layout classes (Maximized to exactly fill available A4 width) */
+    /* Sizing per layout classes (Sized to exactly fit Letter & A4 width margins safely) */
     .board-size-4 {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      width: 310px;
-      height: 310px;
+      width: 300px;
+      height: 300px;
     }
     .board-size-6 {
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(6, 1fr);
-      width: 310px;
-      height: 310px;
+      width: 300px;
+      height: 300px;
     }
     .board-size-9 {
       grid-template-columns: repeat(9, 1fr);
       grid-template-rows: repeat(9, 1fr);
-      width: 310px;
-      height: 310px;
+      width: 300px;
+      height: 300px;
     }
 
     .sudoku-cell {
@@ -434,25 +434,25 @@
 
     /* Dynamic Border Thickness Styles */
     .sudoku-cell.block-top {
-      border-top: 3.5px solid var(--box-color) !important;
+      border-top: 3px solid var(--box-color) !important;
     }
     .sudoku-cell.block-bottom {
-      border-bottom: 3.5px solid var(--box-color) !important;
+      border-bottom: 3px solid var(--box-color) !important;
     }
     .sudoku-cell.block-left {
-      border-left: 3.5px solid var(--box-color) !important;
+      border-left: 3px solid var(--box-color) !important;
     }
     .sudoku-cell.block-right {
-      border-right: 3.5px solid var(--box-color) !important;
+      border-right: 3px solid var(--box-color) !important;
     }
 
     .cell-value {
       font-weight: 700;
       color: #0f172a;
     }
-    .board-size-4 .cell-value { font-size: 2.2rem; }
-    .board-size-6 .cell-value { font-size: 1.7rem; }
-    .board-size-9 .cell-value { font-size: 1.25rem; }
+    .board-size-4 .cell-value { font-size: 2.1rem; }
+    .board-size-6 .cell-value { font-size: 1.6rem; }
+    .board-size-9 .cell-value { font-size: 1.2rem; }
 
     .cell-input {
       width: 100%;
@@ -466,9 +466,9 @@
       outline: none;
       transition: background-color 0.15s;
     }
-    .board-size-4 .cell-input { font-size: 2.2rem; }
-    .board-size-6 .cell-input { font-size: 1.7rem; }
-    .board-size-9 .cell-input { font-size: 1.25rem; }
+    .board-size-4 .cell-input { font-size: 2.1rem; }
+    .board-size-6 .cell-input { font-size: 1.6rem; }
+    .board-size-9 .cell-input { font-size: 1.2rem; }
 
     .cell-input:focus {
       background-color: rgba(241, 245, 249, 0.8);
@@ -497,8 +497,7 @@
 
     /* Print layout configurations */
     @page {
-      size: A4;
-      margin: 0; /* Clears browser headers/footers and margins */
+      margin: 0mm; /* Completely disables print header, footer, date, and URL margins */
     }
 
     @media print {
@@ -519,8 +518,8 @@
       }
       .page-container {
         width: 210mm !important;
-        height: 297mm !important;
-        padding: 10mm 15mm !important;
+        height: 268mm !important; /* Shrunk slightly to guarantee fit on both A4 and Letter under any default settings */
+        padding: 10mm 12mm 10mm !important;
         margin: 0 !important;
         box-shadow: none !important;
         border: none !important;
