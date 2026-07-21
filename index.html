@@ -171,7 +171,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 10px;
+      gap: 12px;
       position: relative;
       box-sizing: border-box;
     }
@@ -517,18 +517,24 @@
         min-height: auto !important;
       }
       .page-container {
-        width: 210mm !important;
-        height: 268mm !important; /* Shrunk slightly to guarantee fit on both A4 and Letter under any default settings */
-        padding: 10mm 12mm 10mm !important;
-        margin: 0 !important;
+        width: 190mm !important; /* Fits both A4 (210) and Letter (216) */
+        height: auto !important; /* Let height flow naturally to avoid split overflows */
+        max-height: 260mm !important; /* Safety constraint */
+        padding: 10mm 15mm !important;
+        margin: 0 auto !important;
         box-shadow: none !important;
         border: none !important;
         border-radius: 0 !important;
         page-break-after: avoid !important;
         page-break-before: avoid !important;
+        page-break-inside: avoid !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: space-between !important;
+        justify-content: flex-start !important; /* Align content tightly to save space */
+        gap: 15px !important;
+      }
+      .puzzles-grid {
+        gap: 10px !important; /* Shaves off more space when printing */
       }
       .sudoku-cell.highlight-line,
       .sudoku-cell.highlight-center {

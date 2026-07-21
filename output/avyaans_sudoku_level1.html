@@ -167,7 +167,7 @@
       background: white;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       border-radius: 12px;
-      padding: 12mm 15mm 15mm;
+      padding: 10mm 12mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -182,19 +182,19 @@
       justify-content: space-between;
       align-items: baseline;
       border-bottom: 2px dashed #e2e8f0;
-      padding-bottom: 8px;
+      padding-bottom: 6px;
       width: 100%;
     }
 
     .header-title {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: -0.5px;
     }
 
     .header-date {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--text-muted);
     }
@@ -203,42 +203,42 @@
     .rules-section {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 10px 15px;
+      border-radius: 10px;
+      padding: 8px 12px;
     }
 
     .rules-title {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: var(--text-main);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       text-align: center;
     }
 
     .rules-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+      gap: 12px;
     }
 
     .rule-card {
       background: white;
       border: 1px solid #e2e8f0;
       border-radius: 8px;
-      padding: 8px;
+      padding: 6px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 4px;
       align-items: center;
     }
 
     .rule-header {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       font-weight: 700;
       color: #334155;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
       display: flex;
       align-items: center;
       gap: 4px;
@@ -248,7 +248,7 @@
     .visual-flow {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 4px;
       width: 100%;
     }
     .visual-row {
@@ -259,11 +259,11 @@
       width: 100%;
     }
     .vis-cell {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       border: 1px solid #cbd5e1;
       border-radius: 4px;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 700;
       display: flex;
       justify-content: center;
@@ -272,8 +272,8 @@
       color: #334155;
     }
     .vis-indicator {
-      font-size: 0.85rem;
-      margin-left: 3px;
+      font-size: 0.8rem;
+      margin-left: 2px;
     }
     .visual-flow-columns {
       display: flex;
@@ -298,12 +298,12 @@
     .visual-box-group {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
     }
     .visual-box-2x2 {
       display: grid;
-      grid-template-columns: repeat(2, 18px);
-      grid-template-rows: repeat(2, 18px);
+      grid-template-columns: repeat(2, 16px);
+      grid-template-rows: repeat(2, 16px);
       gap: 2px;
       border: 1.5px solid #475569;
       padding: 1px;
@@ -314,7 +314,7 @@
       width: 100%;
       height: 100%;
       border: 0.5px solid #94a3b8;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
     }
 
     /* Puzzles Layout inside the sheet (Maximized height) */
@@ -327,36 +327,36 @@
     }
 
     .puzzle-card {
-      border: 1.5px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 10px;
-      background: white;
+      border: none;
+      background: transparent;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 6px;
       width: 100%;
       height: 100%;
     }
 
     .puzzle-header {
       width: 100%;
+      max-width: 300px; /* Aligns header precisely with the board width */
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #f1f5f9;
-      padding-bottom: 4px;
+      padding-bottom: 2px;
+      margin-bottom: 2px;
     }
 
     .puzzle-title {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 700;
       color: #1e293b;
     }
 
     .puzzle-badge {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 600;
       padding: 1px 6px;
       border-radius: 10px;
@@ -367,29 +367,29 @@
     /* Sudoku Board dynamic styling */
     .sudoku-board {
       display: grid;
-      background-color: var(--grid-border);
+      background-color: #0f172a;
       border: 3.5px solid #0f172a; /* Slate outermost board border (Big Square Frame) */
       gap: 1.5px;
     }
 
-    /* Sizing per layout classes (Maximized for printing comfort) */
+    /* Sizing per layout classes (Sized to exactly fit Letter & A4 width margins safely) */
     .board-size-4 {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
     }
     .board-size-6 {
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(6, 1fr);
-      width: 260px;
-      height: 260px;
+      width: 300px;
+      height: 300px;
     }
     .board-size-9 {
       grid-template-columns: repeat(9, 1fr);
       grid-template-rows: repeat(9, 1fr);
-      width: 270px;
-      height: 270px;
+      width: 300px;
+      height: 300px;
     }
 
     .sudoku-cell {
@@ -447,12 +447,12 @@
     }
 
     .cell-value {
-      font-size: 1.5rem;
       font-weight: 700;
       color: #0f172a;
     }
-    .board-size-4 .cell-value { font-size: 1.7rem; }
-    .board-size-9 .cell-value { font-size: 1.25rem; }
+    .board-size-4 .cell-value { font-size: 2.1rem; }
+    .board-size-6 .cell-value { font-size: 1.6rem; }
+    .board-size-9 .cell-value { font-size: 1.2rem; }
 
     .cell-input {
       width: 100%;
@@ -460,15 +460,15 @@
       border: none;
       text-align: center;
       font-family: 'Outfit', sans-serif;
-      font-size: 1.5rem;
       font-weight: 700;
       color: var(--primary);
       background: transparent;
       outline: none;
       transition: background-color 0.15s;
     }
-    .board-size-4 .cell-input { font-size: 1.7rem; }
-    .board-size-9 .cell-input { font-size: 1.25rem; }
+    .board-size-4 .cell-input { font-size: 2.1rem; }
+    .board-size-6 .cell-input { font-size: 1.6rem; }
+    .board-size-9 .cell-input { font-size: 1.2rem; }
 
     .cell-input:focus {
       background-color: rgba(241, 245, 249, 0.8);
@@ -500,6 +500,8 @@
       body {
         background: white;
         color: black;
+        margin: 0;
+        padding: 0;
       }
       .sidebar {
         display: none !important;
@@ -508,20 +510,27 @@
         margin-left: 0 !important;
         padding: 0 !important;
         width: 100% !important;
+        min-height: auto !important;
       }
       .page-container {
-        width: 210mm !important;
-        height: 297mm !important;
-        padding: 10mm 15mm 15mm !important;
-        margin: 0 !important;
+        width: 190mm !important; /* Fits both A4 (210) and Letter (216) */
+        height: auto !important; /* Let height flow naturally to avoid split overflows */
+        max-height: 260mm !important; /* Safety constraint */
+        padding: 10mm 15mm !important;
+        margin: 0 auto !important;
         box-shadow: none !important;
         border: none !important;
         border-radius: 0 !important;
         page-break-after: avoid !important;
         page-break-before: avoid !important;
+        page-break-inside: avoid !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: space-between !important;
+        justify-content: flex-start !important; /* Align content tightly to save space */
+        gap: 15px !important;
+      }
+      .puzzles-grid {
+        gap: 10px !important; /* Shaves off more space when printing */
       }
       .sudoku-cell.highlight-line,
       .sudoku-cell.highlight-center {
