@@ -21,8 +21,8 @@
       --grid-border: #0f172a;
       --grid-inner: #cbd5e1;
       --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-      --highlight-bg: #eff6ff;
-      --highlight-center: #dbeafe;
+      --highlight-bg: rgba(59, 130, 246, 0.08);
+      --highlight-center: rgba(59, 130, 246, 0.2);
     }
 
     * {
@@ -194,7 +194,7 @@
       margin-top: 4px;
     }
 
-    /* Rules Guide Section */
+    /* Visual Rules Section */
     .rules-section {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
@@ -208,35 +208,108 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: var(--text-main);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      text-align: center;
     }
 
     .rules-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      gap: 15px;
     }
 
     .rule-card {
       background: white;
       border: 1px solid #e2e8f0;
       border-radius: 8px;
-      padding: 8px 10px;
+      padding: 10px;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 8px;
+      align-items: center;
     }
 
     .rule-header {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: #334155;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
 
-    .rule-desc {
-      font-size: 0.7rem;
-      color: var(--text-muted);
-      line-height: 1.3;
+    /* Infographic flows styles */
+    .visual-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+    }
+    .visual-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      width: 100%;
+    }
+    .vis-cell {
+      width: 22px;
+      height: 22px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f8fafc;
+      color: #334155;
+    }
+    .vis-indicator {
+      font-size: 0.95rem;
+      margin-left: 5px;
+    }
+    .visual-flow-columns {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .visual-col-group {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .visual-col {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .visual-flow-boxes {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .visual-box-group {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .visual-box-2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, 20px);
+      grid-template-rows: repeat(2, 20px);
+      gap: 2px;
+      border: 1.5px solid #475569;
+      padding: 2px;
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+    .visual-box-2x2 .vis-cell {
+      width: 100%;
+      height: 100%;
+      border: 0.5px solid #94a3b8;
+      font-size: 0.75rem;
     }
 
     /* Puzzles Layout inside the sheet */
@@ -303,29 +376,54 @@
     .board-size-4 {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      width: 160px;
-      height: 160px;
+      width: 165px;
+      height: 165px;
     }
     .board-size-6 {
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(6, 1fr);
-      width: 200px;
-      height: 200px;
+      width: 210px;
+      height: 210px;
     }
     .board-size-9 {
       grid-template-columns: repeat(9, 1fr);
       grid-template-rows: repeat(9, 1fr);
-      width: 240px;
-      height: 240px;
+      width: 250px;
+      height: 250px;
     }
 
     .sudoku-cell {
-      background: white;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
       aspect-ratio: 1;
+    }
+
+    /* Color coding for blocks (decent pastel styling) */
+    
+    /* 4x4 Grid - 4 distinct blocks */
+    .board-size-4 .sudoku-cell[data-box="0"] { background-color: #e0f2fe !important; } /* sky blue */
+    .board-size-4 .sudoku-cell[data-box="1"] { background-color: #dcfce7 !important; } /* mint green */
+    .board-size-4 .sudoku-cell[data-box="2"] { background-color: #fef3c7 !important; } /* warm yellow */
+    .board-size-4 .sudoku-cell[data-box="3"] { background-color: #f3e8ff !important; } /* light lavender */
+
+    /* 6x6 Grid - 6 distinct blocks */
+    .board-size-6 .sudoku-cell[data-box="0"] { background-color: #e0f2fe !important; }
+    .board-size-6 .sudoku-cell[data-box="1"] { background-color: #dcfce7 !important; }
+    .board-size-6 .sudoku-cell[data-box="2"] { background-color: #fef3c7 !important; }
+    .board-size-6 .sudoku-cell[data-box="3"] { background-color: #f3e8ff !important; }
+    .board-size-6 .sudoku-cell[data-box="4"] { background-color: #fee2e2 !important; } /* soft rose */
+    .board-size-6 .sudoku-cell[data-box="5"] { background-color: #ffedd5 !important; } /* soft orange */
+
+    /* 9x9 Grid - clean alternating checkered pastel style */
+    .board-size-9 .sudoku-cell { background-color: #ffffff !important; }
+    .board-size-9 .sudoku-cell[data-box="0"],
+    .board-size-9 .sudoku-cell[data-box="2"],
+    .board-size-9 .sudoku-cell[data-box="4"],
+    .board-size-9 .sudoku-cell[data-box="6"],
+    .board-size-9 .sudoku-cell[data-box="8"] {
+      background-color: #e0f2fe !important; /* sky blue checkered pattern */
     }
 
     /* Dividers 4x4 */
@@ -380,15 +478,19 @@
     .board-size-9 .cell-input { font-size: 1.05rem; }
 
     .cell-input:focus {
-      background-color: #f1f5f9;
+      background-color: rgba(255, 255, 255, 0.6);
     }
 
     /* Visual Highlighting (Interactive Mode) */
     .sudoku-cell.highlight-line {
       background-color: var(--highlight-bg) !important;
+      outline: 1.5px dashed var(--primary);
+      z-index: 10;
     }
     .sudoku-cell.highlight-center {
       background-color: var(--highlight-center) !important;
+      outline: 2px solid var(--primary);
+      z-index: 20;
     }
 
     .cell-input.correct {
@@ -499,6 +601,7 @@
       .sudoku-cell.highlight-line,
       .sudoku-cell.highlight-center {
         background-color: transparent !important;
+        outline: none !important;
       }
       .cell-input {
         color: transparent !important;
@@ -861,25 +964,81 @@
         }
         page.appendChild(header);
 
-        // 2. Rules section (Only on Page 1)
+        // 2. Rules section (Only on Page 1) - Symbolic Infographics
         if (pageNum === 1) {
           const rules = document.createElement('div');
           rules.className = 'rules-section';
           rules.innerHTML = `
-            <div class="rules-title">💡 How to Play:</div>
+            <div class="rules-title">💡 Visual Rules:</div>
             <div class="rules-grid">
+              
+              <!-- Row Rule Card -->
               <div class="rule-card">
-                <div class="rule-header">↔️ 1. Row Rule</div>
-                <div class="rule-desc">Every horizontal line must have numbers 1 to ${size} without doubles.</div>
+                <div class="rule-header">↔️ Row Rule</div>
+                <div class="visual-flow">
+                  <div class="visual-row">
+                    <span class="vis-cell">1</span>
+                    <span class="vis-cell">2</span>
+                    <span class="vis-cell">3</span>
+                    <span class="vis-cell">4</span>
+                    <span class="vis-indicator">✅</span>
+                  </div>
+                  <div class="visual-row">
+                    <span class="vis-cell">1</span>
+                    <span class="vis-cell">2</span>
+                    <span class="vis-cell" style="border-color: var(--error); color: var(--error);">2</span>
+                    <span class="vis-cell">3</span>
+                    <span class="vis-indicator">❌</span>
+                  </div>
+                </div>
               </div>
+
+              <!-- Column Rule Card -->
               <div class="rule-card">
-                <div class="rule-header">↕️ 2. Column Rule</div>
-                <div class="rule-desc">Every vertical line must have numbers 1 to ${size} without doubles.</div>
+                <div class="rule-header">↕️ Column Rule</div>
+                <div class="visual-flow-columns">
+                  <div class="visual-col-group">
+                    <div class="visual-col">
+                      <span class="vis-cell">1</span>
+                      <span class="vis-cell">2</span>
+                      <span class="vis-cell">3</span>
+                      <span class="vis-cell">4</span>
+                    </div>
+                    <span class="vis-indicator">✅</span>
+                  </div>
+                  <div class="visual-col-group">
+                    <div class="visual-col">
+                      <span class="vis-cell">1</span>
+                      <span class="vis-cell">2</span>
+                      <span class="vis-cell" style="border-color: var(--error); color: var(--error);">2</span>
+                      <span class="vis-cell">3</span>
+                    </div>
+                    <span class="vis-indicator">❌</span>
+                  </div>
+                </div>
               </div>
+
+              <!-- Box Rule Card -->
               <div class="rule-card">
-                <div class="rule-header">🔲 3. Box Rule</div>
-                <div class="rule-desc">Each thick-bordered sub-square block must contain 1 to ${size} without repeats.</div>
+                <div class="rule-header">🔲 Box Rule</div>
+                <div class="visual-flow-boxes">
+                  <div class="visual-box-group">
+                    <div class="visual-box-2x2">
+                      <span class="vis-cell">1</span><span class="vis-cell">2</span>
+                      <span class="vis-cell">3</span><span class="vis-cell">4</span>
+                    </div>
+                    <span class="vis-indicator">✅</span>
+                  </div>
+                  <div class="visual-box-group">
+                    <div class="visual-box-2x2">
+                      <span class="vis-cell">1</span><span class="vis-cell">2</span>
+                      <span class="vis-cell" style="border-color: var(--error); color: var(--error);">2</span><span class="vis-cell">3</span>
+                    </div>
+                    <span class="vis-indicator">❌</span>
+                  </div>
+                </div>
               </div>
+
             </div>
           `;
           page.appendChild(rules);
