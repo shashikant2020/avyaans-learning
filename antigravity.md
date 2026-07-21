@@ -162,3 +162,16 @@ timeline
   - Committed and pushed updates to the GitHub repository.
 - **Key Decisions**:
   - Retain precise details of Avyaan's eating routines and playschool behaviors to provide a high-fidelity reference for formulating learning plans.
+
+### Session 8: 2026-07-21
+- **Goal**: Create printable beginner-level Sudoku worksheet for Avyaan to learn Sudoku logic.
+- **Actions Taken**:
+  - Designed and created a 4x4 Sudoku learning worksheet at `output/avyaans_sudoku_level1.html`.
+  - Added 4 puzzles progressing in logic: row logic, row/column logic, column logic, and 2x2 box logic.
+  - Designed dual-mode behavior: interactive web view with auto-check validation (green/red feedback) and A4 print view (pure white background, ink-saving, hides buttons, ready for pencil input).
+  - Included visual guide boxes for Row, Column, and Box rules.
+  - Added a dedicated "Avyaan's Decompression Zone" drawing card at the bottom for car drawings.
+- **Key Decisions**:
+  - Keep the level simple (4x4 grids, 10-12 filled cells) to introduce logic progressively.
+  - Respect the decompression profile constraint by incorporating solo car drawing space as a reward mechanism on the printed page.
+

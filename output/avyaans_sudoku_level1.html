@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avyaan's Sudoku Adventure - Level 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f0f4f8;
+      --card-bg: #ffffff;
+      --text-main: #2c3e50;
+      --text-muted: #7f8c8d;
+      --primary: #3498db;
+      --primary-dark: #2980b9;
+      --success: #2ecc71;
+      --error: #e74c3c;
+      --grid-border: #34495e;
+      --grid-inner: #bdc3c7;
+      --shadow: 0 10px 30px rgba(189, 195, 199, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-main);
+      padding: 30px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    /* Outer sheet representing A4 aspect ratio on screen */
+    .page-container {
+      width: 100%;
+      max-width: 800px; /* Scaled for standard desktop viewing */
+      background: var(--card-bg);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      position: relative;
+    }
+
+    /* Screen Action Bar */
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #e8f4fd;
+      padding: 15px 25px;
+      border-radius: 12px;
+      border: 1px solid #d4eafd;
+    }
+
+    .action-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #eaeded;
+      color: var(--text-main);
+    }
+
+    .btn-secondary:hover {
+      background: #d5dbdb;
+    }
+
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+    }
+
+    .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 22px;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .3s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--success);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(18px);
+    }
+
+    /* Header Block */
+    .header-block {
+      text-align: center;
+      border-bottom: 2px dashed #e2e8f0;
+      padding-bottom: 20px;
+    }
+
+    .header-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-top: 5px;
+      font-weight: 400;
+    }
+
+    /* Rules Section */
+    .rules-section {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 15px 20px;
+    }
+
+    .rules-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .rule-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .rule-header {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #34495e;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .rule-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    .rule-visual {
+      display: flex;
+      gap: 4px;
+      margin-top: 4px;
+      justify-content: center;
+    }
+
+    .visual-cell {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #bdc3c7;
+      border-radius: 3px;
+      font-size: 0.65rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      background: #f8fafc;
+    }
+
+    .visual-cell.highlight {
+      background: #e8f4fd;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .visual-cell.target {
+      background: #e8fcf0;
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    /* Puzzles Grid Area */
+    .puzzles-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .puzzle-card {
+      border: 1.5px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    .puzzle-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 8px;
+    }
+
+    .puzzle-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    .puzzle-difficulty {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: #e8fcf0;
+      color: #27ae60;
+    }
+
+    /* Sudoku Board */
+    .sudoku-board {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      border: 3px solid var(--grid-border);
+      width: 200px;
+      height: 200px;
+      background: var(--grid-border);
+      gap: 1px;
+    }
+
+    .sudoku-cell {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Thick borders for 2x2 grids */
+    /* Vertical divide */
+    .sudoku-cell:nth-child(4n+2) {
+      border-right: 2px solid var(--grid-border);
+    }
+    /* Horizontal divide */
+    .sudoku-cell:nth-child(n+5):nth-child(-n+8) {
+      border-bottom: 2px solid var(--grid-border);
+    }
+
+    /* Cell content style */
+    .cell-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    .cell-input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      color: var(--primary);
+      background: transparent;
+      outline: none;
+      transition: background-color 0.2s;
+    }
+
+    .cell-input:focus {
+      background-color: #ebf5fb;
+    }
+
+    /* Validation states */
+    .cell-input.correct {
+      color: var(--success);
+      font-weight: 800;
+    }
+
+    .cell-input.incorrect {
+      color: var(--error);
+      background-color: #fdf2f2;
+    }
+
+    /* Footer and Drawing zone */
+    .footer-container {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 20px;
+      border-top: 2px dashed #e2e8f0;
+      padding-top: 20px;
+    }
+
+    .stars-card {
+      background: #fffdf5;
+      border: 1px solid #fef08a;
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #854d0e;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .metadata-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: #713f12;
+    }
+
+    .metadata-line {
+      border-bottom: 1px dotted #ca8a04;
+      padding-bottom: 2px;
+    }
+
+    .star-rating {
+      display: flex;
+      gap: 5px;
+      font-size: 1.5rem;
+      color: #ca8a04;
+      cursor: pointer;
+    }
+
+    .star-btn {
+      cursor: pointer;
+      transition: transform 0.1s ease;
+    }
+
+    .star-btn:hover {
+      transform: scale(1.2);
+    }
+
+    .drawing-card {
+      border: 2px dashed #cbd5e1;
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: #f8fafc;
+      min-height: 120px;
+    }
+
+    .drawing-zone {
+      flex-grow: 1;
+      border: 1px dashed #94a3b8;
+      border-radius: 8px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #94a3b8;
+      font-size: 0.8rem;
+      font-style: italic;
+      height: 80px;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: white;
+        color: black;
+        padding: 0;
+        margin: 0;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .page-container {
+        max-width: 100%;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding: 10mm;
+        gap: 15px;
+      }
+
+      .header-block {
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+      }
+
+      .header-title {
+        font-size: 1.8rem;
+      }
+
+      .header-subtitle {
+        font-size: 0.9rem;
+      }
+
+      .rules-section {
+        padding: 10px 15px;
+        margin-bottom: 5px;
+      }
+
+      .rules-grid {
+        gap: 10px;
+      }
+
+      .rule-card {
+        padding: 6px;
+      }
+
+      .puzzles-container {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .puzzle-card {
+        padding: 10px;
+        border: 1px solid #a1a1aa;
+        border-radius: 8px;
+      }
+
+      .sudoku-board {
+        width: 160px;
+        height: 160px;
+        border: 2px solid black;
+        background: black;
+      }
+
+      .sudoku-cell {
+        background: white;
+      }
+
+      .sudoku-cell:nth-child(4n+2) {
+        border-right: 2px solid black;
+      }
+
+      .sudoku-cell:nth-child(n+5):nth-child(-n+8) {
+        border-bottom: 2px solid black;
+      }
+
+      .cell-value {
+        font-size: 1.3rem;
+        color: black;
+      }
+
+      /* In print, make input field look like empty dotted box for writing */
+      .cell-input {
+        color: transparent;
+        background: transparent;
+        border: none;
+      }
+
+      .cell-input::placeholder {
+        color: transparent;
+      }
+
+      .footer-container {
+        grid-template-columns: 2fr 3fr;
+        gap: 15px;
+        padding-top: 10px;
+        margin-top: 5px;
+      }
+
+      .stars-card {
+        padding: 10px;
+        border: 1px solid #ca8a04;
+        background: white;
+      }
+
+      .drawing-card {
+        padding: 10px;
+        border: 1.5px dashed #64748b;
+        background: white;
+      }
+
+      .drawing-zone {
+        border: 1px dashed #64748b;
+        height: 70px;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-container">
+    
+    <!-- Screen-only controls -->
+    <div class="action-bar no-print">
+      <div class="action-title">
+        <span>🎮 Interactive & Printable Worksheet</span>
+      </div>
+      <div class="btn-group">
+        <label class="toggle-container">
+          <span>Auto-Check Answers</span>
+          <div class="toggle-switch">
+            <input type="checkbox" id="autocheck-toggle" checked>
+            <span class="slider"></span>
+          </div>
+        </label>
+        <button class="btn-secondary" onclick="resetPuzzles()">
+          🔄 Reset Grid
+        </button>
+        <button class="btn-primary" onclick="window.print()">
+          🖨️ Print Worksheet (A4)
+        </button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header-block">
+      <h1 class="header-title">Avyaan's Sudoku Adventure 🚗</h1>
+      <p class="header-subtitle">Level 1: Beginner 4x4 Grid — Complete each row, column, and 2x2 square using numbers 1, 2, 3, and 4!</p>
+    </div>
+
+    <!-- How to Solve Rules Guide -->
+    <div class="rules-section">
+      <div class="rules-title">💡 How to Solve:</div>
+      <div class="rules-grid">
+        <!-- Row rule -->
+        <div class="rule-card">
+          <div class="rule-header">↔️ 1. Row Rule</div>
+          <div class="rule-desc">Every horizontal line must have 1, 2, 3, and 4. No doubles!</div>
+          <div class="rule-visual">
+            <div class="visual-cell">1</div>
+            <div class="visual-cell highlight">2</div>
+            <div class="visual-cell highlight">3</div>
+            <div class="visual-cell target">?</div>
+          </div>
+        </div>
+        <!-- Column rule -->
+        <div class="rule-card">
+          <div class="rule-header">↕️ 2. Column Rule</div>
+          <div class="rule-desc">Every vertical column must have 1, 2, 3, and 4. No doubles!</div>
+          <div class="rule-visual" style="flex-direction: column; align-items: center;">
+            <div class="visual-cell">1</div>
+            <div class="visual-cell highlight">?</div>
+            <div class="visual-cell highlight">3</div>
+            <div class="visual-cell">4</div>
+          </div>
+        </div>
+        <!-- Box rule -->
+        <div class="rule-card">
+          <div class="rule-header">🔲 3. Box Rule</div>
+          <div class="rule-desc">Each thick-bordered 2x2 square box must contain 1, 2, 3, and 4.</div>
+          <div class="rule-visual" style="flex-wrap: wrap; width: 42px; margin: 4px auto 0;">
+            <div class="visual-cell highlight">1</div>
+            <div class="visual-cell highlight">2</div>
+            <div class="visual-cell">3</div>
+            <div class="visual-cell target">?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Puzzles Grid -->
+    <div class="puzzles-container">
+      
+      <!-- Puzzle 1 -->
+      <div class="puzzle-card">
+        <div class="puzzle-header">
+          <span class="puzzle-title">Puzzle 1: Row Magic</span>
+          <span class="puzzle-difficulty">Super Easy</span>
+        </div>
+        <div class="sudoku-board" id="board-1">
+          <!-- Cells populated by JS -->
+        </div>
+      </div>
+
+      <!-- Puzzle 2 -->
+      <div class="puzzle-card">
+        <div class="puzzle-header">
+          <span class="puzzle-title">Puzzle 2: Up & Down</span>
+          <span class="puzzle-difficulty">Easy</span>
+        </div>
+        <div class="sudoku-board" id="board-2">
+          <!-- Cells populated by JS -->
+        </div>
+      </div>
+
+      <!-- Puzzle 3 -->
+      <div class="puzzle-card">
+        <div class="puzzle-header">
+          <span class="puzzle-title">Puzzle 3: Big Columns</span>
+          <span class="puzzle-difficulty">Easy</span>
+        </div>
+        <div class="sudoku-board" id="board-3">
+          <!-- Cells populated by JS -->
+        </div>
+      </div>
+
+      <!-- Puzzle 4 -->
+      <div class="puzzle-card">
+        <div class="puzzle-header">
+          <span class="puzzle-title">Puzzle 4: The 2x2 Box</span>
+          <span class="puzzle-difficulty">Beginner +</span>
+        </div>
+        <div class="sudoku-board" id="board-4">
+          <!-- Cells populated by JS -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer / Decompression Area -->
+    <div class="footer-container">
+      
+      <!-- Stars & Notes -->
+      <div class="stars-card">
+        <div class="card-title">🌟 Parent's Corner</div>
+        <div class="metadata-row">
+          <div class="metadata-line">Date: <span class="no-print" style="color: var(--text-muted);">Auto-fills on print</span></div>
+          <div class="metadata-line">Time Spent: ________________</div>
+        </div>
+        <div style="margin-top: 5px;">
+          <div class="metadata-row" style="margin-bottom: 5px;">Progress Stars:</div>
+          <div class="star-rating" id="parent-stars">
+            <span class="star-btn" onclick="setStars(1)">☆</span>
+            <span class="star-btn" onclick="setStars(2)">☆</span>
+            <span class="star-btn" onclick="setStars(3)">☆</span>
+            <span class="star-btn" onclick="setStars(4)">☆</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drawing Zone -->
+      <div class="drawing-card">
+        <div class="card-title" style="color: #475569;">🚗 Avyaan's Decompression Zone</div>
+        <div class="metadata-row" style="color: #64748b; font-size: 0.8rem;">Solved the puzzles? Draw your favorite car right here!</div>
+        <div class="drawing-zone">
+          <span class="no-print">Use pencil here when printed! ✏️</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Puzzles definition
+    // 0 = empty cell
+    const puzzles = [
+      {
+        id: 1,
+        solution: [
+          1, 2, 3, 4,
+          3, 4, 1, 2,
+          2, 1, 4, 3,
+          4, 3, 2, 1
+        ],
+        start: [
+          1, 2, 3, 0,
+          0, 4, 1, 2,
+          2, 0, 4, 3,
+          4, 3, 0, 1
+        ]
+      },
+      {
+        id: 2,
+        solution: [
+          2, 4, 1, 3,
+          3, 1, 2, 4,
+          4, 2, 3, 1,
+          1, 3, 4, 2
+        ],
+        start: [
+          2, 0, 1, 3,
+          3, 1, 0, 4,
+          0, 2, 3, 0,
+          1, 0, 4, 2
+        ]
+      },
+      {
+        id: 3,
+        solution: [
+          4, 3, 2, 1,
+          1, 2, 4, 3,
+          3, 4, 1, 2,
+          2, 1, 3, 4
+        ],
+        start: [
+          4, 3, 0, 1,
+          0, 2, 4, 0,
+          3, 0, 0, 2,
+          2, 0, 3, 4
+        ]
+      },
+      {
+        id: 4,
+        solution: [
+          3, 1, 4, 2,
+          4, 2, 3, 1,
+          1, 3, 2, 4,
+          2, 4, 1, 3
+        ],
+        start: [
+          3, 1, 4, 0,
+          4, 0, 0, 1,
+          1, 0, 0, 4,
+          0, 4, 1, 3
+        ]
+      }
+    ];
+
+    let autoCheck = true;
+
+    // Load puzzles on page start
+    window.addEventListener('DOMContentLoaded', () => {
+      // Set today's date
+      const dateLine = document.querySelector('.metadata-line');
+      const today = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+      dateLine.innerHTML = `Date: <strong>${today}</strong>`;
+
+      puzzles.forEach(puzzle => {
+        renderBoard(puzzle);
+      });
+
+      document.getElementById('autocheck-toggle').addEventListener('change', (e) => {
+        autoCheck = e.target.checked;
+        validateAll();
+      });
+    });
+
+    // Render a single sudoku board
+    function renderBoard(puzzle) {
+      const boardElement = document.getElementById(`board-${puzzle.id}`);
+      boardElement.innerHTML = '';
+
+      puzzle.start.forEach((value, index) => {
+        const cell = document.createElement('div');
+        cell.className = 'sudoku-cell';
+
+        if (value !== 0) {
+          // Pre-filled read-only value
+          cell.innerHTML = `<span class="cell-value">${value}</span>`;
+        } else {
+          // User input cell
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.pattern = '[1-4]';
+          input.className = 'cell-input';
+          input.maxLength = 1;
+          input.id = `input-${puzzle.id}-${index}`;
+          
+          // Dotted outline indicator for print placeholder
+          input.placeholder = '.';
+
+          // Typing logic
+          input.addEventListener('input', (e) => {
+            let val = e.target.value;
+            // Only allow 1, 2, 3, 4
+            if (!/^[1-4]$/.test(val)) {
+              e.target.value = '';
+              e.target.className = 'cell-input';
+              return;
+            }
+            if (autoCheck) {
+              checkCell(puzzle.id, index, val, e.target);
+            }
+          });
+
+          cell.appendChild(input);
+        }
+
+        boardElement.appendChild(cell);
+      });
+    }
+
+    // Check a single cell validation
+    function checkCell(puzzleId, cellIndex, enteredValue, inputElement) {
+      const puzzle = puzzles.find(p => p.id === puzzleId);
+      const correctAnswer = puzzle.solution[cellIndex];
+
+      if (enteredValue == correctAnswer) {
+        inputElement.className = 'cell-input correct';
+      } else if (enteredValue === '') {
+        inputElement.className = 'cell-input';
+      } else {
+        inputElement.className = 'cell-input incorrect';
+      }
+    }
+
+    // Validate all cells in all boards
+    function validateAll() {
+      puzzles.forEach(puzzle => {
+        puzzle.start.forEach((value, index) => {
+          if (value === 0) {
+            const input = document.getElementById(`input-${puzzle.id}-${index}`);
+            if (input && input.value !== '') {
+              if (autoCheck) {
+                checkCell(puzzle.id, index, input.value, input);
+              } else {
+                input.className = 'cell-input';
+              }
+            }
+          }
+        });
+      });
+    }
+
+    // Reset user entries
+    function resetPuzzles() {
+      puzzles.forEach(puzzle => {
+        puzzle.start.forEach((value, index) => {
+          if (value === 0) {
+            const input = document.getElementById(`input-${puzzle.id}-${index}`);
+            if (input) {
+              input.value = '';
+              input.className = 'cell-input';
+            }
+          }
+        });
+      });
+    }
+
+    // Set stars rating helper
+    function setStars(count) {
+      const starContainer = document.getElementById('parent-stars');
+      const stars = starContainer.querySelectorAll('.star-btn');
+      
+      stars.forEach((star, index) => {
+        if (index < count) {
+          star.innerHTML = '★';
+          star.style.color = '#ca8a04';
+        } else {
+          star.innerHTML = '☆';
+          star.style.color = '#ca8a04';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
