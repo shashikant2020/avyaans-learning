@@ -6,7 +6,7 @@ This document serves as the central memory, rules, regulations, and governance s
 
 ## 📋 Personal Profile
 - **Full Name**: Avyaan Prasad (also referred to as Abhyan)
-- **Date of Birth**: 14 July 2018 (6 years old as of early 2025)
+- **Date of Birth**: 14 July 2018 (8 years old as of July 2026)
 - **German Residence**: Büchnerring 38, 13409 Berlin, Germany
 - **Current Location**: Gaur City 1, Noida Extension, Greater Noida, UP, India (temporary stay for therapy)
 - **Father**: Shashikant Prasad (Software Engineer, currently working in Berlin, Germany; Contact: +49 15140900789)
