@@ -341,12 +341,12 @@
     .puzzle-header {
       width: 100%;
       max-width: 300px; /* Aligns header precisely with the board width */
+      margin: 0 auto 2px; /* Center header matching the board */
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #f1f5f9;
       padding-bottom: 2px;
-      margin-bottom: 2px;
     }
 
     .puzzle-title {
@@ -370,26 +370,24 @@
       background-color: #0f172a;
       border: 3.5px solid #0f172a; /* Slate outermost board border (Big Square Frame) */
       gap: 1.5px;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 1;
+      margin: 0 auto;
     }
 
     /* Sizing per layout classes (Sized to exactly fit Letter & A4 width margins safely) */
     .board-size-4 {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      width: 300px;
-      height: 300px;
     }
     .board-size-6 {
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(6, 1fr);
-      width: 300px;
-      height: 300px;
     }
     .board-size-9 {
       grid-template-columns: repeat(9, 1fr);
       grid-template-rows: repeat(9, 1fr);
-      width: 300px;
-      height: 300px;
     }
 
     .sudoku-cell {
@@ -646,7 +644,8 @@
         min-height: auto !important;
       }
       .page-container {
-        width: 190mm !important; /* Fits both A4 (210) and Letter (216) */
+        width: 100% !important; /* Fill page width dynamically */
+        max-width: 190mm !important; /* Fits A4 & Letter safely on desktop print, scales down dynamically on mobile print */
         height: auto !important; /* Let height flow naturally to avoid split overflows */
         max-height: 260mm !important; /* Safety constraint */
         padding: 10mm 15mm !important;
